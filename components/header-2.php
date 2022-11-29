@@ -37,8 +37,10 @@
             </div>
             <div id="search">
                 <div class="logo">
-                    <img src="" alt="">
-                    <a href="http://localhost/projects/bluesphire/"><p>Blue <span style="color:#17BAC7;">Sphire</span></p></a>
+                    <a href="http://localhost/projects/bluesphire/">
+                        <!-- <p>Blue <span style="color:#17BAC7;">Sphire</span></p> -->
+                        <img src="./img/17.BlueSphireLogo.png" alt="">
+                    </a>
                 </div>
                 <div class="searchBar">
                     <div class="bar">
