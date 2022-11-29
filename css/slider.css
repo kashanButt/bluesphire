@@ -1,0 +1,27 @@
+#trendSlider{
+    position: relative;
+}
+#trendSlider img{
+    transition: opacity 1.5s;
+    position: absolute;
+    width: 565px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+#trendSlider #img_01{
+    width: 583px;
+    height: 300px;
+}
+#trendSlider #img_02{
+    width: 583px;
+    height: 300px;
+}
+#trendSlider #img_03{
+    width: 583px;
+    height: 300px;
+}
+#trendSlider img.fadeIn {
+    opacity: 1;
+}

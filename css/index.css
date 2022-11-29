@@ -1,0 +1,173 @@
+#banner{
+    width: 90%;
+    height: 430px;
+    margin: auto;
+    display: flex;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#banner .bannerCategories{
+    width: 25%;
+    margin: 1%;
+    margin-top: 0;
+}
+#banner .bannerCategories h4{
+    background-color: #012335;
+    height: 30px;
+    color: white;
+    padding: 2%;    
+    padding-left: 5%;
+    padding-top: 4%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#banner .bannerCategories nav{
+    padding-left: 5%;
+}
+#banner .bannerCategories nav ul li{
+    list-style: none;
+    font-weight: 600;
+    padding: 2%;
+}
+#banner .bannerSlider{
+    width: 50%;
+    height: 430px;
+    margin: 1%;
+    margin-top: 0;
+}
+#banner #trendSlider{
+    width: 100%;
+    height: 300px;
+}
+#banner .brandLogoSlider{
+    width: 100%;
+    height: 106px;
+    margin-top: 20px;
+    position: relative;
+}
+#banner .brandLogoSlider .owl-carousel .owl-item img {
+    width: 144%;
+}
+#banner .trends{
+    width: 25%;
+    height: 430px;
+    margin: 1%;
+    margin-top: 0;
+}
+#banner .trends .trendOne{
+    width: 100%;
+    height: 131px;
+    overflow: hidden;
+}
+#banner .trends .trendOne img {
+    width: 100%;
+    transition: transform .4s;   /* smoother zoom */
+}
+#banner .trends .trendOne:hover img {
+    transform: scale(1.1);
+}
+#banner .trends .trendTwo{
+    width: 100%;
+    height: 132px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+#banner .trends .trendTwo img {
+    width: 100%;
+    transition: transform .4s;   /* smoother zoom */
+}
+#banner .trends .trendTwo:hover img {
+    transform: scale(1.1);
+}
+#banner .trends .trendThree{
+    width: 100%;
+    height: 131px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+#banner .trends .trendThree img {
+    width: 100%;
+    height: 140px;
+    transition: transform .4s;   /* smoother zoom */
+}
+#banner .trends .trendThree:hover img {
+    transform: scale(1.1);
+}
+#flashDeals{
+    width: 100%;
+    padding: 1%;
+    padding-top: 0;
+    margin-bottom: 20px;
+}
+#flashDeals h2{
+    padding: 1%;
+    padding-left: 0;
+}
+#flashDeals h2{
+    padding: 1%;
+    padding-left: 0;
+}
+#flashDeals .owl-carousel .item h4{
+    color: rgba(191, 191, 191);
+    font-weight: 600;
+}
+#flashDeals .owl-carousel .item h2{
+    font-weight: 600;
+}
+#flashDeals .owl-carousel .item h3{
+    font-weight: 600;
+}
+#flashDeals .owl-carousel .item .productDetails{
+    padding: 5%;
+}
+#featuredBrands{
+    width: 100%;
+}
+#featuredBrands #brands{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+#featuredBrands #brands .productDetails{
+    padding-left: 5px;
+}
+#featuredBrands #brands .productDetails p{
+    color: #666;
+}
+#featuredBrands #brands img{
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+}
+#featuredBrands .samsung{
+    width: 30%;
+    position: relative;
+    margin: .5%;
+}
+#featuredBrands .canon{
+    width: 30%;
+    position: relative;
+    margin: .5%;
+}
+#featuredBrands .canon img{
+    height: 220px;
+}
+#featuredBrands .kingston{
+    width: 37%;
+    position: relative;
+    margin: .5%;
+}
+#extendedSale {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+#extendedSale img {
+    width: 100%;
+    transition: transform .4s;
+}
+#extendedSale:hover img {
+    transform: scale(1.1);
+}

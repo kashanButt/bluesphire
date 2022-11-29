@@ -1,0 +1,148 @@
+#header {
+    width: 100%;
+}
+#header #tagline{
+    width: 100%;
+    height: 50px;
+    background-color: #CCCCCC;
+}
+#header #tagline p{
+    padding-top: .8%;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+}
+#header #upperNav{
+    width: 100%;
+    height: 50px;
+    background-color: #F9F9F9;
+}
+#header #upperNav nav{
+    width: 284px;
+    height: 49px;
+    margin-left: 980px;
+}
+#header #upperNav ul li{
+    width: 112px;
+    float: left;
+    list-style: none;
+    padding: 5%;
+    border: 1px solid #CCCCCC;
+    border-top: none;
+    cursor: pointer;
+}
+#header #upperNav ul li:hover{
+    color:#17BAC7;
+}
+#header #search{
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+#header #search .logo{
+    width: 30%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+#header #search .searchBar{
+    width: 50%;
+    text-align: center;
+}
+#header #search .searchBar .bar{
+    width: 85%;
+    height: 47px;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 0;
+    margin-top: 4.5%;
+}
+#header #search .searchBar .bar{
+    display:flex;
+    text-align: left;
+}
+#header #search .searchBar input{
+    width: 87%;
+    border: none;
+    font-size: 18px;
+    padding: 2%;
+    font-weight: 600;
+}
+#header #search .searchBar .bar .searchIcon{
+    position:relative;
+}
+#header #search .searchBar button{
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+#header #search .searchBar .bar i{
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    font-size:25px;
+    top:2%;
+    padding-top:20%
+}
+#header #search .shoppingCart{
+    width: 20%;
+    text-align: center;
+    margin-top: 3%;
+    display: flex;
+}
+#header #search .shoppingCart i{
+    margin-right: 2%;
+    margin-top: 1%;
+}
+#header #mainNav{
+    width: 100%;
+    height: 50px;
+    background-color: #17BAC7;
+}
+#header #mainNav nav{
+    padding-left: 7.6%;
+    position: relative;
+}
+#header #mainNav nav ul li{
+    float: left;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    list-style:none;
+    padding: .8%;
+    padding-left: 3%;
+    cursor: pointer;
+}
+#header #mainNav nav ul li .subMenu{
+    display: none;
+    position: absolute;
+    width: 250px;
+    box-shadow: 0 0 2px 0 #666;
+    background-color: white ;
+    z-index: 100;
+    padding: 20px;
+    margin-top: 10px;
+    transition: 1s all;
+}
+#header #mainNav nav ul li:hover .subMenu{
+    display: block;
+}
+#header #mainNav nav ul li h4{
+    color: black;
+    letter-spacing: 1px;
+}
+#header #mainNav nav ul li ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+#header #mainNav nav ul li .subMenu ul li{
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    padding:1% 0 ;
+}
+#header #mainNav nav ul li .subMenu ul li:hover{
+    color: #17BAC7;
+}
