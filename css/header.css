@@ -45,6 +45,11 @@
     font-size: 25px;
     font-weight: bold;
 }
+#header #search .logo img{
+    width: 120px;
+    height: 60px;
+    margin-top: 15px;
+}
 #header #search .searchBar{
     width: 50%;
     text-align: center;

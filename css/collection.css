@@ -1,3 +1,7 @@
+#collectionContent{
+    display: flex;
+    padding: 1%;
+}
 #mainContent{
     width: 85%;
 }

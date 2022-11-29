@@ -1,6 +1,6 @@
-<?php include "../components/header-2.php"; ?>
+<?php include "../components/header.php"; ?>
 <!-- Sidebar -->
-<div id="content">
+<div id="collectionContent">
     <div id="sidebar">
         <h3>Sort By</h3>
         <h4>Price</h4>
@@ -103,4 +103,4 @@
     </div>
 </div>
 <!-- Sidebar -->
-<?php include "../components/footer-2.php"; ?>
+<?php include "../components/footer.php"; ?>

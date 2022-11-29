@@ -12,10 +12,12 @@
     <!-- Font Awesome -->
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/main.css">
+    <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/header.css">
+    <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/index.css">
+    <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/sidebar.css">
+    <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/collection.css">
+    <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/footer.css">
     <!-- Stylesheet -->
 
     <!-- Slider -->
@@ -46,7 +48,7 @@
             <div id="search">
                 <div class="logo">
                     <a href="http://localhost/projects/bluesphire/">
-                        <img src="./img/17.BlueSphireLogo.png" alt="">
+                        <img src="http://localhost/projects/bluesphire/img/17.BlueSphireLogo.png" alt="">
                         <!-- <p>Blue <span style="color:#17BAC7;">Sphire</span></p> -->
                     </a>
                 </div>
@@ -71,7 +73,7 @@
                             <div class="subMenu">
                                 <h4>COMPANIES</h4>
                                 <ul>
-                                    <a href="./collection/"><li>Canon</li></a>
+                                    <a href="http://localhost/projects/bluesphire/collection/"><li>Canon</li></a>
                                     <li>Adidas</li>
                                     <li>Nike</li>
                                 </ul>
