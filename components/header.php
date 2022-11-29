@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/main.css">
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/header.css">
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/index.css">
-    <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/sidebar.css">
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/collection.css">
+    <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/model.css">
+    <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/sidebar.css">
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/footer.css">
     <!-- Stylesheet -->
 
@@ -34,6 +35,15 @@
 <body>
     <div id="container">    
         <div id="header">
+            <div id="modelBackground">
+                <div id="model">
+                    <h4>Login</h4>
+                    <input type="text" name="username" id="username">
+                    <input type="text" name="password" id="password">
+
+                    <input type="submit" value="Login" name="submit">
+                </div>
+            </div>
             <div id="tagline">
                 <p>50+ Valentine's Day 2019 Food Freebies, Specials and Deals</p>
             </div>
