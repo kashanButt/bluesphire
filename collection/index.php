@@ -1,4 +1,7 @@
-<?php include "../components/header.php"; ?>
+<?php
+    $pageTitle = "Collection";
+    include "../components/header.php";
+?>
 <!-- Sidebar -->
 <div id="collectionContent">
     <div id="sidebar">

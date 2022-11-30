@@ -5,7 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        Blue Sphire
+        <?php
+            $companyName = "Blue Sphire";
+            $seperator = " - ";
+            if($_SERVER["REQUEST_URI"] != "/projects/bluesphire/"){
+                echo $companyName.$seperator.$pageTitle;
+            }else{
+                echo $companyName;
+            }
+        ?>
     </title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -89,6 +97,12 @@
                 </nav>
             </div>
         </div>
+        <div id="cartBackgorund">
+            <div id="cart">
+                <h4>Cart</h4>
+                <h5>is empty</h5>
+            </div>
+        </div>
         <div id="modelBackground">
             <div id="model">
                 <button class="closeModel" onclick="modelDisplayHide()"><i class="fa-solid fa-xmark"></i></button>
@@ -110,11 +124,5 @@
                     <input type="submit" value="Proceed" name="login">
                     <input type="submit" value="Sign Up" name="signUp" onclick="signUpDisplay()">
                 </div>
-            </div>
-        </div>
-        <div id="cartBackgorund">
-            <div id="cart">
-                <h4>Cart</h4>
-                <h5>is empty</h5>
             </div>
         </div>

@@ -67,7 +67,7 @@
         </div>
     </div><!-- container end -->
     <!-- script -->
-    <script src="http://localhost/projects/bluesphire/js/slider.js"></script>
+    <!-- <script src="http://localhost/projects/bluesphire/js/slider.js"></script> -->
     <script src="http://localhost/projects/bluesphire/js/model.js"></script>
     <!-- script -->
 
