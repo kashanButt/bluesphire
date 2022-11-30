@@ -65,7 +65,7 @@
                 <p>© 2022 BlueSphire Supermarket & Retail store. All rights Reserved</p>
             </div>
         </div>
-    </div> <!-- container end -->
+    </div><!-- container end -->
     <!-- script -->
     <script src="http://localhost/projects/bluesphire/js/slider.js"></script>
     <script src="http://localhost/projects/bluesphire/js/model.js"></script>
