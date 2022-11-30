@@ -98,14 +98,14 @@
                             <input type="password" name="signUpPassword" id="signUpPassword" placeholder="Password"><br>
 
                             <input type="submit" value="Login" name="login"  onclick="loginDisplay()">
-                            <input type="submit" value="Sign Up" name="signUp">
+                            <input type="submit" value="Proceed" name="signUp">
                     </div>
                     <div class="login">
                         <h4>Login</h4>
                         <input type="text" name="loginEmail" id="loginEmail" placeholder="Email"><br>
                         <input type="password" name="loginPassword" id="loginPassword" placeholder="Password"><br>
                         <p class="forgetPassword">Forget Password?</p>
-                        <input type="submit" value="Login" name="login">
+                        <input type="submit" value="Proceed" name="login">
                         <input type="submit" value="Sign Up" name="signUp" onclick="signUpDisplay()">
                     </div>
                 </div>

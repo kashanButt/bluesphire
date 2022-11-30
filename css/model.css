@@ -27,6 +27,7 @@
     background: inherit;
     border: none;
     font-size: 20px;
+    cursor: pointer;
 }
 #model .signUp{
     display: none;
@@ -56,6 +57,7 @@
     font-weight: bold;
     transition: .3s ease-in-out;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 #modelBackground #model .login .forgetPassword{
     font-size: 13px;

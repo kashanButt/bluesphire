@@ -93,6 +93,7 @@
     text-align: center;
     margin-top: 3%;
     display: flex;
+    cursor: pointer;
 }
 #header #search .shoppingCart i{
     margin-right: 2%;
