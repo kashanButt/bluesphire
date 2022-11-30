@@ -35,23 +35,14 @@
 <body>
     <div id="container">    
         <div id="header">
-            <div id="modelBackground">
-                <div id="model">
-                    <h4>Login</h4>
-                    <input type="text" name="username" id="username">
-                    <input type="text" name="password" id="password">
-
-                    <input type="submit" value="Login" name="submit">
-                </div>
-            </div>
             <div id="tagline">
                 <p>50+ Valentine's Day 2019 Food Freebies, Specials and Deals</p>
             </div>
             <div id="upperNav">
                 <nav>
                     <ul>
-                        <li style="border-right:none">Contact Us</li>
-                        <li><i class="fa-regular fa-user"></i> My Account</li>
+                        <!-- <li style="border-right:none">Contact Us</li> -->
+                        <li onclick="modelDisplayShow()"><i class="fa-regular fa-user"></i> My Account</li>
                     </ul>
                 </nav>
             </div>
@@ -95,5 +86,28 @@
                         <a href="./contact-us/"><li>Contact Us</li></a> -->
                     </ul>
                 </nav>
+            </div>
+            <div id="modelBackground">
+                <div id="model">
+                    <button class="closeModel" onclick="modelDisplayHide()"><i class="fa-solid fa-xmark"></i></button>
+                    <div class="signUp">
+                        <h4>Sign Up</h4>
+                            <input type="text" name="signUpFirstName" id="signUpFirstName" placeholder="First Name"><br>
+                            <input type="text" name="signUpLastName" id="signUpLastName" placeholder="Last Name"><br>
+                            <input type="email" name="signUpEmail" id="signUpEmail" placeholder="Email"><br>
+                            <input type="password" name="signUpPassword" id="signUpPassword" placeholder="Password"><br>
+
+                            <input type="submit" value="Login" name="login"  onclick="loginDisplay()">
+                            <input type="submit" value="Sign Up" name="signUp">
+                    </div>
+                    <div class="login">
+                        <h4>Login</h4>
+                        <input type="text" name="loginEmail" id="loginEmail" placeholder="Email"><br>
+                        <input type="password" name="loginPassword" id="loginPassword" placeholder="Password"><br>
+                        <p class="forgetPassword">Forget Password?</p>
+                        <input type="submit" value="Login" name="login">
+                        <input type="submit" value="Sign Up" name="signUp" onclick="signUpDisplay()">
+                    </div>
+                </div>
             </div>
         </div>
