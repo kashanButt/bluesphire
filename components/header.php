@@ -28,15 +28,29 @@
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/cart.css">
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/sidebar.css">
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/footer.css">
+
+    <!-- <link rel="stylesheet" href="https://bluesphire.net/css/main.css">
+    <link rel="stylesheet" href="https://bluesphire.net/css/header.css">
+    <link rel="stylesheet" href="https://bluesphire.net/css/index.css">
+    <link rel="stylesheet" href="https://bluesphire.net/css/collection.css">
+    <link rel="stylesheet" href="https://bluesphire.net/css/model.css">
+    <link rel="stylesheet" href="https://bluesphire.net/css/cart.css">
+    <link rel="stylesheet" href="https://bluesphire.net/css/sidebar.css">
+    <link rel="stylesheet" href="https://bluesphire.net/css/footer.css"> -->
     <!-- Stylesheet -->
 
     <!-- Slider -->
     <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="./css/revslider.css">
+
+    <!-- <link rel="stylesheet" href="https://bluesphire.net/css/slider.css">
+    <link rel="stylesheet" href="https://bluesphire.net/revslider.css"> -->
     <!-- Slider -->
 
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="./css/owlCarousel.css">
+
+    <link rel="stylesheet" href="https://bluesphire.net/css/owlCarousel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Owl Carousel -->
@@ -58,7 +72,9 @@
             <div id="search">
                 <div class="logo">
                     <a href="http://localhost/projects/bluesphire/">
+                    <!-- <a href="https://bluesphire.net/"> -->
                         <img src="http://localhost/projects/bluesphire/img/17.BlueSphireLogo.png" alt="">
+                        <!-- <img src="https://bluesphire.net/img/17.BlueSphireLogo.png" alt=""> -->
                         <!-- <p>Blue <span style="color:#17BAC7;">Sphire</span></p> -->
                     </a>
                 </div>
@@ -84,6 +100,7 @@
                                 <h4>COMPANIES</h4>
                                 <ul>
                                     <a href="http://localhost/projects/bluesphire/collection/"><li>Canon</li></a>
+                                    <!-- <a href="https://bluesphire.net/collection/"><li>Canon</li></a> -->
                                     <li>Adidas</li>
                                     <li>Nike</li>
                                 </ul>
