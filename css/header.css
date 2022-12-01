@@ -151,6 +151,15 @@
 }
 
 @media(min-width:1000px) and (max-width:1100px) {
+    #header #tagline{
+        max-height: 42px;
+    }
+    #header #tagline p{
+        font-size: 13px;
+    }
+    #header #upperNav ul li{
+        font-size: 13px;
+    }
     #header #search .searchBar .bar{
         height: 33px;
         margin-top: 6.5%;
@@ -162,6 +171,9 @@
         top: 0;
         padding-top: 18%;
         font-size: 16px;
+    }
+    #header #search .shoppingCart p{
+        font-size: 13px;
     }
     #header #mainNav{
         height: 39px;

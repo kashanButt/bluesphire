@@ -122,4 +122,7 @@
     #footer #stayConnected i{
         width: 11%;
     }
+    #footer #copyright{
+        height: 28px;
+    }
 }
