@@ -78,7 +78,7 @@
             <div id="mainNav">
                 <nav>
                     <ul>
-                        <a href="http://localhost/projects/bluesphire/"><li>Home</li></a>
+                        <a href="http://localhost/projects/bluesphire/"><li style="padding-left:0">Home</li></a>
                         <li>Collections <i class="fa-solid fa-angle-down"></i>
                             <div class="subMenu">
                                 <h4>COMPANIES</h4>
@@ -97,12 +97,12 @@
                 </nav>
             </div>
         </div>
-        <div id="cartBackgorund">
+        <!-- <div id="cartBackgorund">
             <div id="cart">
                 <h4>Cart</h4>
                 <h5>is empty</h5>
             </div>
-        </div>
+        </div> -->
         <div id="modelBackground">
             <div id="model">
                 <button class="closeModel" onclick="modelDisplayHide()"><i class="fa-solid fa-xmark"></i></button>

@@ -19,8 +19,6 @@ function slideShow() {
         e.className = "";
     };
 
-    debugger;
-
     fadeOut(slides[curIndex]);
     curIndex++;
     if(curIndex === slides.length) {

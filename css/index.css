@@ -32,7 +32,6 @@
 }
 #banner .bannerSlider{
     width: 50%;
-    height: 430px;
     margin: 1%;
     margin-top: 0;
 }
@@ -170,4 +169,41 @@
 }
 #extendedSale:hover img {
     transform: scale(1.1);
+}
+@media(min-width:1200px) and (max-width:1300px){
+    #banner .bannerCategories nav li{
+        font-size: 15px;
+    }
+    #trendSlider #img_01, #trendSlider #img_02, #trendSlider #img_03{
+        max-width: 504px;
+    }
+    .trends .trendOne, .trends .trendTwo, .trends .trendTwo{
+        max-height: 120px;
+    }
+}
+@media(min-width:1000px) and (max-width:1200px){
+    #banner{
+        height: 327px;
+    }
+    #banner .bannerCategories nav li{
+        font-size: 13px;
+    }
+    #trendSlider{
+        max-height:250px ;
+    }
+    #trendSlider #img_01, #trendSlider #img_02, #trendSlider #img_03{
+        max-width: 450px;
+    }
+    .trends .trendOne, .trends .trendTwo, .trends .trendTwo{
+        max-height: 100px; 
+    }
+    #featuredBrands .productDetails p{
+        font-size: 12px;
+    }
+    #featuredBrands .canon img {
+        height: 172px;
+    }
+    #extendedSale{
+        height: 148px;
+    }
 }
