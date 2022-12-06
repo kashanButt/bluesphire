@@ -39,12 +39,14 @@
         </div>
         <div id="products">
             <div class="item">
-                <img src="../img/01.HomeFlashDealsSliderDemoIMG.jpg" alt="">
-                <div class="productDetails">
-                    <h4>Product Company</h4>
-                    <h2>Product Name</h2>
-                    <h3>Price</h3>
-                </div>
+                <a href="../product/">
+                    <img src="../img/01.HomeFlashDealsSliderDemoIMG.jpg" alt="">
+                    <div class="productDetails">
+                        <h4>Product Company</h4>
+                        <h2>Product Name</h2>
+                        <h3>Price</h3>
+                    </div>
+                </a>
             </div>
             <div class="item">
                 <img src="../img/01.HomeFlashDealsSliderDemoIMG.jpg" alt="">

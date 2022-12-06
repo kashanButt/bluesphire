@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/header.css">
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/index.css">
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/collection.css">
+    <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/product.css">
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/model.css">
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/cart.css">
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/sidebar.css">
@@ -33,6 +34,7 @@
     <link rel="stylesheet" href="https://bluesphire.net/css/header.css">
     <link rel="stylesheet" href="https://bluesphire.net/css/index.css">
     <link rel="stylesheet" href="https://bluesphire.net/css/collection.css">
+    <link rel="stylesheet" href="https://bluesphire.net/css/product.css">
     <link rel="stylesheet" href="https://bluesphire.net/css/model.css">
     <link rel="stylesheet" href="https://bluesphire.net/css/cart.css">
     <link rel="stylesheet" href="https://bluesphire.net/css/sidebar.css">
