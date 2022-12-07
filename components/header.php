@@ -66,7 +66,10 @@
             <div id="upperNav">
                 <nav>
                     <ul>
-                        <!-- <li style="border-right:none">Contact Us</li> -->
+                        <li style="border-right:none;">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <p>Shopping Cart</p>
+                        </li>
                         <li onclick="modelDisplayShow()"><i class="fa-regular fa-user"></i> My Account</li>
                     </ul>
                 </nav>
@@ -75,7 +78,7 @@
                 <div class="logo">
                     <a href="http://localhost/projects/bluesphire/">
                     <!-- <a href="https://bluesphire.net/"> -->
-                        <img src="http://localhost/projects/bluesphire/img/17.BlueSphireLogo.png" alt="">
+                        <img src="http://localhost/projects/bluesphire/img/BlueSphireLogo.png" alt="">
                         <!-- <img src="https://bluesphire.net/img/17.BlueSphireLogo.png" alt=""> -->
                         <!-- <p>Blue <span style="color:#17BAC7;">Sphire</span></p> -->
                     </a>
@@ -89,14 +92,34 @@
                     </div>
                 </div>
                 <div class="shoppingCart">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <p>Shopping Cart</p>
+                    <a href="https://wa.me/+1 786-7499820">
+                        <i class="fa-regular fa-comments"></i>
+                        <p>Chat Now</p>
+                    </a>
                 </div>
             </div>
             <div id="mainNav">
                 <nav>
                     <ul>
                         <a href="http://localhost/projects/bluesphire/"><li style="padding-left:0">Home</li></a>
+                        <li>Categories <i class="fa-solid fa-angle-down"></i>
+                            <div class="subMenu">
+                                <ul style="margin-top:0">
+                                    <li>Women Clothings</li>
+                                    <li>Mens Clothings</li>
+                                    <li>Cell Phones & Accessories</li>
+                                    <li>Computer, Offices, Security</li>
+                                    <li>Consumer Electronics</li>
+                                    <li>Jewelry & Watches</li>
+                                    <li>Home & Garden, Appliance</li>
+                                    <li>Bags & Shoes</li>
+                                    <li>Toys, Kids & Baby</li>
+                                    <li>Sports & Outdoors</li>
+                                    <li>Health & Beauty, Hair</li>
+                                    <li>Automobiles & Motorcycles</li>
+                                </ul>
+                            </div>
+                        </li>
                         <li>Collections <i class="fa-solid fa-angle-down"></i>
                             <div class="subMenu">
                                 <h4>COMPANIES</h4>
@@ -110,8 +133,6 @@
                         </li>
                         <li>New Arrivals <i class="fa-solid fa-angle-down"></i></li>
                         <li>Special Deals <i class="fa-solid fa-angle-down"></i></li>
-                        <!-- <a href="./about-us/"><li>About Us</li></a>
-                        <a href="./contact-us/"><li>Contact Us</li></a> -->
                     </ul>
                 </nav>
             </div>

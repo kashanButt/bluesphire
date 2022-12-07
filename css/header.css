@@ -4,7 +4,7 @@
 #header #tagline{
     width: 100%;
     height: 50px;
-    background-color: #CCCCCC;
+    background-color: #005FE8;
 }
 #header #tagline p{
     padding-top: .8%;
@@ -17,8 +17,8 @@
     background-color: #F9F9F9;
 }
 #header #upperNav nav{
-    width: 216px;
-    margin-left: 80%;
+    width: 350px;
+    margin-left: 70%;
 }
 #header #upperNav ul li{
     float: left;
@@ -27,9 +27,14 @@
     border: 1px solid #CCCCCC;
     border-top: none;
     cursor: pointer;
+    display: flex;
+}
+#header #upperNav ul li i{
+    margin-top: 4%;
+    margin-right: 5px;
 }
 #header #upperNav ul li:hover{
-    color:#17BAC7;
+    color:#005FE8;
 }
 #header #search{
     display: flex;
@@ -43,7 +48,7 @@
     font-weight: bold;
 }
 #header #search .logo img{
-    width: 100px;
+    width: 196px;
     height: 60px;
     margin-top: 15px;
 }
@@ -92,6 +97,9 @@
     display: flex;
     cursor: pointer;
 }
+#header #search .shoppingCart:hover{
+    color: #005FE8;
+}
 #header #search .shoppingCart i{
     margin-right: 2%;
     margin-top: 1%;
@@ -99,7 +107,7 @@
 #header #mainNav{
     width: 100%;
     height: 50px;
-    background-color: #17BAC7;
+    background-color: #005FE8;
 }
 #header #mainNav nav{
     padding-left: 7.6%;
@@ -147,7 +155,7 @@
     padding: 1% 0;
 }
 #header #mainNav nav ul li .subMenu ul li:hover{
-    color: #17BAC7;
+    color: #005FE8;
 }
 
 @media(min-width:1000px) and (max-width:1100px) {

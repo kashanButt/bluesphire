@@ -1,7 +1,7 @@
 <?php include_once "./components/header.php" ?>
     <div id="content">
         <div id="banner">
-            <div class="bannerCategories">
+            <!-- <div class="bannerCategories">
                 <h4>Categories</h4>
                 <nav>
                     <ul>
@@ -19,7 +19,7 @@
                         <li>Automobiles & Motorcycles</li>
                     </ul>
                 </nav>
-            </div>
+            </div> -->
             <div class="bannerSlider">
                 <div id="trendSlider">
                     <img src="./img/02.HomeBannerSliderDemoIMG_01.jpg" id="img_01">
@@ -62,7 +62,7 @@
             </div>
         </div>
         <div id="flashDeals">
-            <h2 style="color:#17BAC7;">Flash Deals</h2>
+            <h2 style="color:#005FE8;">Flash Deals</h2>
             <!-- Owl Caroudel jQuery is located in footer -->
             <div class="owl-carousel owl-theme"> 
                 <div class="item">
@@ -76,7 +76,7 @@
             </div>
         </div>
         <div id="featuredBrands">
-            <h2 style="color:#17BAC7;">Featured Brands</h2>
+            <h2 style="color:#005FE8;">Featured Brands</h2>
             <div id="brands">
                 <div class="samsung">
                     <img src="./img/05.FeatureBrandsIMG_01.jpg" alt="">

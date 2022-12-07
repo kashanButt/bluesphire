@@ -7,12 +7,12 @@
     margin-bottom: 20px;
     position: relative;
 }
-#banner .bannerCategories{
+/* #banner .bannerCategories{
     width: 25%;
     margin: 1%;
     margin-top: 0;
-}
-#banner .bannerCategories h4{
+} */
+/* #banner .bannerCategories h4{
     background-color: #012335;
     height: 30px;
     color: white;
@@ -21,7 +21,7 @@
     padding-top: 4%;
     text-transform: uppercase;
     letter-spacing: 1px;
-}
+} */
 #banner .bannerCategories nav{
     padding-left: 5%;
 }
@@ -31,7 +31,7 @@
     padding: 2%;
 }
 #banner .bannerSlider{
-    width: 50%;
+    width: 75%;
     margin: 1%;
     margin-top: 0;
 }
@@ -96,7 +96,7 @@
 #flashDeals{
     width: 100%;
     padding: 1%;
-    padding-top: 0;
+    padding-top: 11px;
     margin-bottom: 20px;
 }
 #flashDeals h2{
@@ -175,7 +175,7 @@
         font-size: 15px;
     }
     #trendSlider #img_01, #trendSlider #img_02, #trendSlider #img_03{
-        max-width: 504px;
+        width: 866px;
     }
     .trends .trendOne, .trends .trendTwo, .trends .trendTwo{
         max-height: 120px;
@@ -192,7 +192,7 @@
         max-height:250px ;
     }
     #trendSlider #img_01, #trendSlider #img_02, #trendSlider #img_03{
-        max-width: 450px;
+        width: 866px;
     }
     .trends .trendOne, .trends .trendTwo, .trends .trendTwo{
         max-height: 100px; 
