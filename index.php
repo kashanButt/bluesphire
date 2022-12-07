@@ -65,7 +65,7 @@
             <h2 style="color:#005FE8;">Flash Deals</h2>
             <!-- Owl Caroudel jQuery is located in footer -->
             <div class="owl-carousel owl-theme"> 
-                <div class="item">
+                <div class="item" style="margin:15px;">
                     <img src="./img/01.HomeFlashDealsSliderDemoIMG.jpg" alt="">
                     <div class="productDetails">
                         <h4>Product Company</h4>

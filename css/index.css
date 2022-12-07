@@ -1,6 +1,6 @@
 #banner{
     width: 90%;
-    height: 430px;
+    height: 485px;
     margin: auto;
     display: flex;
     padding-top: 20px;
@@ -88,7 +88,7 @@
 #banner .trends .trendThree img {
     width: 100%;
     height: 140px;
-    transition: transform .4s;   /* smoother zoom */
+    transition: transform .4s;
 }
 #banner .trends .trendThree:hover img {
     transform: scale(1.1);
@@ -175,7 +175,7 @@
         font-size: 15px;
     }
     #trendSlider #img_01, #trendSlider #img_02, #trendSlider #img_03{
-        width: 866px;
+        max-width: 566px;
     }
     .trends .trendOne, .trends .trendTwo, .trends .trendTwo{
         max-height: 120px;
@@ -183,7 +183,7 @@
 }
 @media(min-width:1000px) and (max-width:1200px){
     #banner{
-        height: 327px;
+        height: 385px;
     }
     #banner .bannerCategories nav li{
         font-size: 13px;
@@ -192,7 +192,7 @@
         max-height:250px ;
     }
     #trendSlider #img_01, #trendSlider #img_02, #trendSlider #img_03{
-        width: 866px;
+        max-width: 660px;
     }
     .trends .trendOne, .trends .trendTwo, .trends .trendTwo{
         max-height: 100px; 
@@ -205,5 +205,14 @@
     }
     #extendedSale{
         height: 148px;
+    }
+}
+@media(min-width:280px) and (max-width:450px){
+    #header #search{
+        display: block;
+        height: auto;
+    }
+    #header #search .logo img{
+        max-width: 100px;
     }
 }

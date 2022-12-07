@@ -92,7 +92,7 @@
                     </div>
                 </div>
                 <div class="shoppingCart">
-                    <a href="https://wa.me/+1 786-7499820">
+                    <a href="https://wa.me/+923072781294" target="_blank">
                         <i class="fa-regular fa-comments"></i>
                         <p>Chat Now</p>
                     </a>
@@ -101,7 +101,12 @@
             <div id="mainNav">
                 <nav>
                     <ul>
-                        <a href="http://localhost/projects/bluesphire/"><li style="padding-left:0">Home</li></a>
+                        <a href="http://localhost/projects/bluesphire/">
+                            <li style="padding-left:0">Home</li>
+                        </a>
+                        <!-- <a href="http://localhost/projects/bluesphire/">
+                            <li style="padding-left:0">Home</li>
+                        </a> -->
                         <li>Categories <i class="fa-solid fa-angle-down"></i>
                             <div class="subMenu">
                                 <ul style="margin-top:0">

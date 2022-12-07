@@ -14,6 +14,11 @@
 }
 #footer #upperFooter h4{
     letter-spacing: 1px;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+#footer #upperFooter h4:hover{
+    font-weight: 900;
 }
 #footer #upperFooter p{
     font-size: 15px;
@@ -56,6 +61,11 @@
 }
 #footer h4{
     letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+#footer h4:hover{
+    font-weight: 900;
 }
 #footer ul{
     list-style: none;
@@ -69,6 +79,7 @@
 }
 #footer ul li:hover{
     color: #005FE8;
+    margin-left: 10px;
 }
 #footer #buyerCentral{
     width: 20%;
