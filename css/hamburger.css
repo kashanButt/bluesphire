@@ -1,0 +1,46 @@
+#toggleHamburger{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 200px;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+#hamburger{
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 355px;
+    left: 10px;
+}
+#hamburger::after{
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+}
+#hamburger::before{
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+}
+#hamburgerMenu{
+    width: 80%;
+    height: 100vh;
+    background-color: black;
+    z-index: 100;
+    position: absolute;
+    top: 340px;
+    left: 0;
+    display: none;
+}

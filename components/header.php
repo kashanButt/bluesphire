@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/cart.css">
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/sidebar.css">
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/footer.css">
+    <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/hamburger.css">
 
     <!-- <link rel="stylesheet" href="https://bluesphire.net/css/main.css">
     <link rel="stylesheet" href="https://bluesphire.net/css/header.css">
@@ -38,7 +39,8 @@
     <link rel="stylesheet" href="https://bluesphire.net/css/model.css">
     <link rel="stylesheet" href="https://bluesphire.net/css/cart.css">
     <link rel="stylesheet" href="https://bluesphire.net/css/sidebar.css">
-    <link rel="stylesheet" href="https://bluesphire.net/css/footer.css"> -->
+    <link rel="stylesheet" href="https://bluesphire.net/css/footer.css">
+    <link rel="stylesheet" href="https://bluesphire.net/css/hamburger.css"> -->
     <!-- Stylesheet -->
 
     <!-- Slider -->
@@ -170,4 +172,11 @@
                     <input type="submit" value="Sign Up" name="signUp" onclick="signUpDisplay()">
                 </div>
             </div>
+        </div>
+        <input type="checkbox" id="toggleHamburger">
+        <div id="hamburger"></div>
+        <div id="hamburgerMenu">
+            <ul>
+                <li></li>
+            </ul>
         </div>
