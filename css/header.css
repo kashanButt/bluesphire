@@ -222,6 +222,69 @@
     }
     #header #mainNav nav ul li{
         display: none;
+    }   
+}
+@media (min-width:700px) and (max-width:900px) {
+    #header #upperNav nav{
+        margin-left: 67%;
     }
-    
+    #hamburger{
+        margin-top:-16px;
+        margin-left:44.4%;
+        cursor: pointer;
+    }
+    #header #tagline{
+        max-height: 35px;
+    }
+    #header #tagline p{
+        font-size: 12px;
+    }
+    #header #upperNav ul li{
+        font-size: 12px;
+    }
+    #header #search{
+        width: 100%;
+        flex-direction: column;
+        min-height: 240px;
+    }
+    #header #search .logo, #header #search .searchBar, #header #search .shoppingCart{
+        min-width: 100%;
+    }
+    #header #search .searchBar{
+        padding-left: 7%;
+    }
+    #header #search .shoppingCart{
+        padding-left: 45%;
+    }
+    #header #mainNav nav{
+        display: none;
+    }
+    #trendSlider #img_01,#trendSlider #img_02,#trendSlider #img_03{
+        max-width: 660px;
+    }
+    #header #mainNav nav ul li{
+        font-size: 13px;
+        padding: 1.8%;
+    }
+    #header #mainNav nav ul li .subMenu ul li{
+        font-size: 12px;
+    }
+}
+@media (min-width:900px) and (max-width:1000px) {
+    #header #upperNav nav{
+        margin-left: 65.6%;
+    }
+    #hamburger{
+        margin-top:300px;
+    }
+    #header #upperNav ul li{
+        font-size: 12px;
+    }
+    #header #mainNav nav ul li{
+        font-size: 13px;
+        padding: 1.8%;
+    }
+    #header #mainNav nav ul li .subMenu ul li{
+        font-size: 12px;
+    }
 }

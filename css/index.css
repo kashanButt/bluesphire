@@ -192,3 +192,79 @@
         height: 148px;
     }
 }
+@media (min-width:700px) and (max-width:800px){
+    #banner{
+        display: block;
+        max-height: 422px;
+    }
+    #banner .bannerSlider{
+        min-width: 100%;
+        min-height: 301px;
+    }
+    #banner .bannerSlider > div:nth-child(2){
+        display: none;
+    }
+    #banner .trends{
+        min-width: 100%;
+        display: flex;
+    }
+    #banner .trends .trendOne,#banner .trends .trendTwo,#banner .trends .trendThree{
+        max-height: 100%;
+    }
+    #banner .trends .trendTwo{
+        margin-top: 0;
+    }
+    #banner .trends .trendThree{
+        margin-top: 0;
+    }
+    #banner .trends .trendThree img{
+        max-height: 100%;
+    }
+    #featuredBrands .canon img{
+        height: 127px;
+    }
+    #flashDeals{
+        padding: 0;
+    }
+    #extendedSale{
+        max-height: 110px;
+    }
+}
+@media (min-width:900px) and (max-width:1000px) {
+    #banner{
+        display: block;
+        max-height: 422px;
+    }
+    #banner .bannerSlider{
+        min-width: 100%;
+        min-height: 301px;
+    }
+    #banner .bannerSlider > div:nth-child(2){
+        display: none;
+    }
+    #banner .trends{
+        min-width: 100%;
+        display: flex;
+    }
+    #banner .trends .trendOne,#banner .trends .trendTwo,#banner .trends .trendThree{
+        max-height: 100%;
+    }
+    #banner .trends .trendTwo{
+        margin-top: 0;
+    }
+    #banner .trends .trendThree{
+        margin-top: 0;
+    }
+    #banner .trends .trendThree img{
+        max-height: 100%;
+    }
+    #featuredBrands .canon img{
+        height: 147px;
+    }
+    #flashDeals{
+        padding: 0;
+    }
+    #extendedSale{
+        max-height: 127px;
+    }
+}

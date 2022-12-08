@@ -25,3 +25,8 @@
 #trendSlider img.fadeIn {
     opacity: 1;
 }
+@media (min-width:900px) and (max-width:1000px) {
+    #trendSlider #img_01,#trendSlider #img_02,#trendSlider #img_03{
+        max-width: 777px;
+    }
+}

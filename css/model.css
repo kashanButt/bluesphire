@@ -50,9 +50,9 @@
     width: 41.4%;
     height: 30px;
     padding: 1%;
-    border: 2px solid #17BAC7;
+    border: 2px solid #005FE8;
     margin: 2% 0;
-    background-color: #17BAC7;
+    background-color: #005FE8;
     color: white;
     font-weight: bold;
     transition: .3s ease-in-out;
@@ -71,6 +71,6 @@
 }
 #modelBackground #model input[type="submit"]:hover{
     background-color: inherit;
-    color: #17BAC7;
+    color: #005FE8;
 }
 
