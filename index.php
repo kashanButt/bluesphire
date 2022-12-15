@@ -1,4 +1,6 @@
-<?php include_once "./components/header.php" ?>
+<?php 
+    include "./database/database.php";
+    include_once "./components/header.php"; ?>
     <div id="content">
         <div id="banner">
             <!-- <div class="bannerCategories">

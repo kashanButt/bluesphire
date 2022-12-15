@@ -194,7 +194,7 @@
         padding-left: 3%;
     }
 }
-@media(min-width:280px) and (max-width:450px){
+@media(min-width:280px) and (max-width:400px){
     #header #search .logo{
         width: 100%;
     }
@@ -222,7 +222,55 @@
     }
     #header #mainNav nav ul li{
         display: none;
-    }   
+    }
+}
+@media(min-width:400px) and (max-width:500px){
+    #header #tagline{
+        max-height: 34px;
+        padding-top: 10px;
+    }
+    #header #upperNav ul li{
+        font-size: 12px;
+    }
+    #header #search .logo{
+        width: 100%;
+    }
+    #header #search .searchBar{
+        width: 93%;
+        margin-left: 30px;
+        text-align: center;
+    }
+    #header #search{
+        display: block;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    #header #search .logo img{
+        max-width: 200px;
+    }
+    #header #upperNav nav{
+        margin: 0 16%;
+    }
+    #header #search .shoppingCart{
+        width: 14%;
+        text-align: center;
+        margin-left: 40%;
+        font-size: 22px;
+    }
+    #header #mainNav nav ul li{
+        display: none;
+    }
+    #toggleHamburger{
+        margin-top: -29px;
+        margin-left: 170px;
+    }
+    #hamburger{
+        margin-top: -28px;
+        margin-left: 43%;
+    }
+    #hamburgerMenu{
+        margin-top: -29px;
+    }
 }
 @media (min-width:700px) and (max-width:900px) {
     #header #upperNav nav{
@@ -230,8 +278,9 @@
     }
     #hamburger{
         margin-top:-16px;
-        margin-left:44.4%;
+        margin-left:48.4%;
         cursor: pointer;
+        display: block;
     }
     #header #tagline{
         max-height: 35px;
@@ -247,8 +296,11 @@
         flex-direction: column;
         min-height: 240px;
     }
-    #header #search .logo, #header #search .searchBar, #header #search .shoppingCart{
+    #header #search .logo, #header #search .searchBar{
         min-width: 100%;
+    }
+    #header #search .shoppingCart{
+        max-width: 30%;
     }
     #header #search .searchBar{
         padding-left: 7%;
@@ -260,7 +312,7 @@
         display: none;
     }
     #trendSlider #img_01,#trendSlider #img_02,#trendSlider #img_03{
-        max-width: 660px;
+        max-width: 600px;
     }
     #header #mainNav nav ul li{
         font-size: 13px;

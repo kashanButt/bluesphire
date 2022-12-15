@@ -191,3 +191,75 @@
         max-height: 24px;
     }
 }
+@media (min-width:400px) and (max-width:500px){
+    #footer{
+        max-width: 95%;
+    }
+    #footer #upperFooter{
+        max-width: 98%;
+        min-height: 320px;
+        flex-direction: column;
+        border-top: none;
+        padding-left: 0;
+    }
+    #footer #upperFooter #delivery,
+    #footer #upperFooter #safePayment,
+    #footer #upperFooter #shopWithConfidence,
+    #footer #upperFooter #HelpCenter{
+        min-width: 100%;
+        border-top: 1px solid #DCDCDC;
+        border-right: none;
+    }
+    #footer #upperFooter img{
+        width: 20px;
+    }
+    #footer #upperFooter h4{
+        font-size: 10px;
+    }
+    #footer #upperFooter #safePayment h4,#footer #upperFooter #shopWithConfidence h4{
+        margin-top: 0;
+    }
+    #footer #upperFooter p{
+        font-size: 10px;
+    }
+    #footer #buyerCentral{
+        min-width: 24%;
+        padding: 1%;
+    }
+    #footer #information{
+        min-width: 22%;
+        padding: 1%;
+    }
+    #footer #help{
+        min-width: 17%;
+        padding: 1%;
+    }
+    #footer #stayConnected{
+        min-width: 17%;
+        padding: 1%;
+    }
+    #footer #mainFooter h4{
+        font-size: 10px;
+    }
+    #footer #mainFooter{
+        max-height: 116px;
+        margin-top: 0;
+    }
+    #footer #stayConnected p{
+        font-size: 10px;
+    }
+    #footer #stayConnected i{
+        min-width: 22%;
+        max-height: 17px;
+        font-size: 14px;
+        padding-top: 5px;
+    }
+    #footer #mainFooter ul li{
+        font-size: 10px;
+        padding: 0;
+    }
+    #footer #copyright{
+        max-height: 24px;
+        padding-left: 19px;
+    }
+}

@@ -268,3 +268,65 @@
         max-height: 127px;
     }
 }
+@media (min-width:400px) and (max-width:500px) {
+    #banner{
+        display: block;
+        max-height: 270px;
+    }
+    #banner .bannerSlider{
+        min-width: 100%;
+        min-height: 301px;
+    }
+    #banner .bannerSlider > div:nth-child(2){
+        display: none;
+    }
+    #banner .trends{
+        min-width: 100%;
+        height: 66px;
+        display: flex;
+    }
+    #banner .trends .trendOne,#banner .trends .trendTwo,#banner .trends .trendThree{
+        max-height: 100%;
+    }
+    #banner .trends .trendTwo{
+        margin-top: 0;
+    }
+    #banner .trends .trendThree{
+        margin-top: 0;
+    }
+    #banner .trends .trendThree img{
+        max-height: 100%;
+    }
+    #banner #trendSlider{
+        max-height: 200px;
+    }
+    #banner .bannerSlider{
+        min-height: 200px;
+    }
+    #trendSlider #img_01, #trendSlider #img_02, #trendSlider #img_03{
+        max-width: 355px;
+        max-height: 200px;
+    }
+    #featuredBrands{
+        text-align: center;
+    }
+    #flashDeals{
+        padding: 0;
+        text-align: center;
+    }
+    #featuredBrands #brands{
+        flex-direction: column;
+    }
+    #featuredBrands .samsung,
+    #featuredBrands .canon,
+    #featuredBrands .kingston{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #extendedSale{
+        max-height: 100px;
+    }
+    #extendedSale img{
+        min-height: 100px;
+    }
+}

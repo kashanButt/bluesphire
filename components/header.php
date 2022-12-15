@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/index.css">
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/collection.css">
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/product.css">
+    <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/checkout.css">
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/model.css">
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/cart.css">
     <link rel="stylesheet" href="http://localhost/projects/bluesphire/css/sidebar.css">
@@ -36,6 +37,7 @@
     <link rel="stylesheet" href="https://bluesphire.net/css/index.css">
     <link rel="stylesheet" href="https://bluesphire.net/css/collection.css">
     <link rel="stylesheet" href="https://bluesphire.net/css/product.css">
+    <link rel="stylesheet" href="https://bluesphire.net/css/checkout.css">
     <link rel="stylesheet" href="https://bluesphire.net/css/model.css">
     <link rel="stylesheet" href="https://bluesphire.net/css/cart.css">
     <link rel="stylesheet" href="https://bluesphire.net/css/sidebar.css">
@@ -81,7 +83,7 @@
                     <a href="http://localhost/projects/bluesphire/">
                     <!-- <a href="https://bluesphire.net/"> -->
                         <img src="http://localhost/projects/bluesphire/img/BlueSphireLogo.png" alt="">
-                        <!-- <img src="https://bluesphire.net/img/17.BlueSphireLogo.png" alt=""> -->
+                        <!-- <img src="https://bluesphire.net/img/BlueSphireLogo.png" alt=""> -->
                         <!-- <p>Blue <span style="color:#17BAC7;">Sphire</span></p> -->
                     </a>
                 </div>
@@ -155,28 +157,133 @@
                 <button class="closeModel" onclick="modelDisplayHide()"><i class="fa-solid fa-xmark"></i></button>
                 <div class="signUp">
                     <h4>Sign Up</h4>
+                    <form method="POST">
                         <input type="text" name="signUpFirstName" id="signUpFirstName" placeholder="First Name"><br>
                         <input type="text" name="signUpLastName" id="signUpLastName" placeholder="Last Name"><br>
                         <input type="email" name="signUpEmail" id="signUpEmail" placeholder="Email"><br>
                          <input type="password" name="signUpPassword" id="signUpPassword" placeholder="Password"><br>
 
-                        <input type="submit" value="Login" name="login"  onclick="loginDisplay()">
-                        <input type="submit" value="Proceed" name="signUp">
+                         <input type="submit" value="Proceed" name="signup">
+                         <input type="submit" value="Login" name="login"  onclick="loginDisplay()">
+
+                    </form>
                 </div>
                 <div class="login">
                     <h4>Login</h4>
-                    <input type="text" name="loginEmail" id="loginEmail" placeholder="Email"><br>
-                    <input type="password" name="loginPassword" id="loginPassword" placeholder="Password"><br>
-                    <p class="forgetPassword">Forget Password?</p>
-                    <input type="submit" value="Proceed" name="login">
-                    <input type="submit" value="Sign Up" name="signUp" onclick="signUpDisplay()">
+                    <form method="POST">
+                        <input type="text" name="loginEmail" id="loginEmail" placeholder="Email"><br>
+                        <input type="password" name="loginPassword" id="loginPassword" placeholder="Password"><br>
+                        <p class="forgetPassword">Forget Password?</p>
+                        
+                        <input type="submit" value="Proceed" name="login">
+                        <input type="submit" value="Sign Up" onclick="signUpDisplay()">
+                    </form>
                 </div>
             </div>
         </div>
         <input type="checkbox" id="toggleHamburger">
-        <div id="hamburger"></div>
-        <div id="hamburgerMenu">
-            <ul>
-                <li></li>
-            </ul>
-        </div>
+        <label for="toggleHamburger">
+            <div id="hamburger"></div>
+            <div id="hamburgerMenu">
+                <nav>
+                    <ul>
+                        <a href="http://localhost/projects/bluesphire/">
+                            <li style="padding-left:0">Home</li>
+                        </a>
+                        <!-- <a href="http://localhost/projects/bluesphire/">
+                            <li style="padding-left:0">Home</li>
+                        </a> -->
+                        <li>Categories <i class="fa-solid fa-angle-down"></i>
+                            <div class="subMenu">
+                                <ul style="margin-top:0">
+                                    <li>Women Clothings</li>
+                                    <li>Mens Clothings</li>
+                                    <li>Cell Phones & Accessories</li>
+                                    <li>Computer, Offices, Security</li>
+                                    <li>Consumer Electronics</li>
+                                    <li>Jewelry & Watches</li>
+                                    <li>Home & Garden, Appliance</li>
+                                    <li>Bags & Shoes</li>
+                                    <li>Toys, Kids & Baby</li>
+                                    <li>Sports & Outdoors</li>
+                                    <li>Health & Beauty, Hair</li>
+                                    <li>Automobiles & Motorcycles</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>Collections <i class="fa-solid fa-angle-down"></i>
+                            <div class="subMenu">
+                                <h4>COMPANIES</h4>
+                                <ul>
+                                    <a href="http://localhost/projects/bluesphire/collection/"><li>Canon</li></a>
+                                    <!-- <a href="https://bluesphire.net/collection/"><li>Canon</li></a> -->
+                                    <li>Adidas</li>
+                                    <li>Nike</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>New Arrivals <i class="fa-solid fa-angle-down"></i></li>
+                        <li>Special Deals <i class="fa-solid fa-angle-down"></i></li>
+                    </ul>
+                </nav>
+            </div>
+        </label>
+        <?php
+            if(isset($_POST["signup"])) {
+                $fname = $_POST["signUpFirstName"];
+                $lname = $_POST["signUpLastName"];
+
+                $name = $fname.$lname;
+                $email = $_POST["signUpEmail"];
+                $password = $_POST["signUpPassword"];
+                
+                $database = new Database();
+                $db = $database->connect();
+
+                $query = "SELECT COUNT(*) FROM `users` WHERE name = '$name'";
+                $res = $db->prepare($query);
+                $row = $res->fetch(PDO::FETCH_ASSOC);
+                if($row["COUNT(*)"] == false){
+                    $query = "CREATE TABLE $name (
+                                id int AUTO_INCREMENT,
+                                productId varchar(255),
+                                PRIMARY KEY (id)
+                            )";
+                    $res = $db->prepare($query);
+                    $res->execute();
+                    $query = "INSERT INTO `users`(`username`, `email`, `password`) VALUES ('$name','$email','$password')";
+                    $res = $db->prepare($query);
+                    $res->execute();
+                }
+
+            }
+            if(isset($_POST["login"])) {
+                $fname = $_POST["signUpFirstName"];
+                $lname = $_POST["signUpLastName"];
+                $name = $fname.$lname;
+                $email = $_POST["signUpEmail"];
+                $password = $_POST["signUpPassword"];
+                
+                $database = new Database();
+                $db = $database->connect();
+
+                $query = "SELECT COUNT(*) FROM `users` WHERE name = '$name'";
+                $res = $db->prepare($query);
+                $row = $res->fetch(PDO::FETCH_ASSOC);
+                if($row["COUNT(*)"] == false){
+                    $query = "CREATE TABLE $name (
+                                id int AUTO_INCREMENT,
+                                productId varchar(255),
+                                PRIMARY KEY (id)
+                            )";
+                    $res = $db->prepare($query);
+                    $res->execute();
+                    echo
+                    "<script>
+                        alert('user created');
+                    </script>";
+                }
+
+            }
+            error_reporting(0);
+        ?>

@@ -63,7 +63,9 @@
                 </div>
             </div>
             <div id="productBtns">
-                <button>BUY NOW</button>
+                <a href="../checkout">
+                    <button>BUY NOW</button>
+                </a>
                 <button><i class="fa-solid fa-cart-shopping"></i> ADD TO CART</button>
             </div>
         </div>

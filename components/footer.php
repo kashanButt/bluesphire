@@ -1,22 +1,22 @@
         <div id="footer">
             <div id="upperFooter">
                 <div id="delivery">
-                    <img src="./img/06.FooterWorldWideDeliveryIcon.jpg" alt="">
+                    <img src="http://localhost/projects/bluesphire/img/06.FooterWorldWideDeliveryIcon.jpg" alt="">
                     <h4>WORLDWIDE DELIVERY</h4>
                     <P>We ship to over 200 countries & regions.</P>
                 </div>
                 <div id="safePayment">
-                    <img src="./img/07.FooterSafePaymentIcon.jpg" alt="">
+                    <img src="http://localhost/projects/bluesphire/img/07.FooterSafePaymentIcon.jpg" alt="">
                     <h4>SAFE PAYMENT</h4>
                     <P>Pay with the world’s most popular and secure payment methods.</P>
                 </div>
                 <div id="shopWithConfidence">
-                    <img src="./img/09.FooterShopWithConfidenceIcon.jpg" alt="">
+                    <img src="http://localhost/projects/bluesphire/img/09.FooterShopWithConfidenceIcon.jpg" alt="">
                     <h4>SHOP WITH CONFIDENCE</h4>
                     <P>Our Buyer Protection covers your purchase from click to delivery.</P>
                 </div>
                 <div id="HelpCenter">
-                    <img src="./img/08.FooterHelpCenterIcon.jpg" alt="">
+                    <img src="http://localhost/projects/bluesphire/img/08.FooterHelpCenterIcon.jpg" alt="">
                     <h4>24/7 Help Center</h4>
                     <P>Round-the-clock assistance for a smooth shopping experience.</P>
                 </div> 
@@ -69,8 +69,10 @@
     <!-- script -->
     <script src="http://localhost/projects/bluesphire/js/slider.js"></script>
     <script src="http://localhost/projects/bluesphire/js/model.js"></script>
+    <script src="http://localhost/projects/bluesphire/js/main.js"></script>
 
     <!-- <script src="https://bluesphire.net/js/slider.js"></script>
+    <script src="https://bluesphire.net/js/main.js"></script>
     <script src="https://bluesphire.net/js/model.js"></script> -->
     <!-- script -->
 
