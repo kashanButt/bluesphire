@@ -1,32 +1,92 @@
 <?php
     $pageTitle = "Product";
     include "../components/header.php";
+    include "../database/database.php";
+
+    $id = $_GET["id"];
+    $database = new Database();
+    $db = $database->connect();
+
+    $query = "SELECT * FROM `products` WHERE id=$id";
+    $res = $db->prepare($query);
+    $res->execute();
+    $row = $res->fetch(PDO::FETCH_ASSOC);
+    extract($row);
 ?>
+<style>
+#trendSlider{
+    position: relative;
+    height:300px;
+}
+#trendSlider img{
+    transition: opacity 1.5s;
+    position: absolute;
+    width: 565px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+#trendSlider #img_01{
+    width: 829px;
+    height: 300px;
+}
+#trendSlider #img_02{
+    width: 829px;
+    height: 300px;
+}
+#trendSlider #img_03{
+    width: 829px;
+    height: 300px;
+}
+#trendSlider img.fadeIn {
+    opacity: 1;
+}
+@media (min-width:900px) and (max-width:1000px) {
+    #trendSlider #img_01,#trendSlider #img_02,#trendSlider #img_03{
+        max-width: 777px;
+    }
+}
+</style>
 <!-- Sidebar -->
 <div id="content">
     <div id="productDetails">
         <div id="productSlider">
-            <div class="productMainSlider">
-                
+            <div id="trendSlider">
+                <?php
+                    $quer = "SELECT * FROM `images` WHERE productID=$id";
+                    $re = $db->prepare($quer);
+                    $re->execute();
+                    while($reqs = $re->fetch(PDO::FETCH_ASSOC)) {
+                ?>
+                <img src="../admin/images/<?php echo $reqs["imageName"]; ?>" id="img_01" style="width:570px;height:300px">
+                <?php } ?>
             </div>
             <div class="productSecondSlider">
                 <div class="owl-carousel owl-theme">
+                    <?php
+                        $q = "SELECT * FROM `images` WHERE productID=$id";
+                        $que = $db->prepare($q);
+                        $que->execute();
+                        while($ans = $que->fetch(PDO::FETCH_ASSOC)){
+                    ?>
                     <div class="item">
-                        <img src="../img/01.HomeFlashDealsSliderDemoIMG.jpg" alt="">
+                        <img src="../admin/images/<?php echo $ans["imageName"]; ?>" alt="" style="width:140px;height:100px">
                     </div>
+                    <?php } ?>
                 </div>
             </div>
         </div>
         <div id="productInfo">
-            <h1>Product Name</h1>
-            <h2>79$</h2>
+            <h1><?php echo $name;?></h1>
+            <h2>$<?php echo $price;?></h2>
             <div id="info">
                 <div class="sku">
                     <div class="heading">
                         <p>SKU</p>
                     </div>
                     <div class="content">
-                        <p>Demo SKU</p>
+                        <p><?php echo $sku;?></p>
                     </div>
                 </div>
                 <div class="category">
@@ -34,15 +94,7 @@
                         <p>Category</p>
                     </div>
                     <div class="content">
-                        <p>Demo Category</p>
-                    </div>
-                </div>
-                <div class="tags">
-                    <div class="heading">
-                        <p>Tags</p>
-                    </div>
-                    <div class="content">
-                        <p>Demo Tags</p>
+                        <p><?php echo $category;?></p>
                     </div>
                 </div>
                 <div class="size">
@@ -50,7 +102,7 @@
                         <p>Size</p>
                     </div>
                     <div class="content">
-                        <p>Demo Size</p>
+                        <p><?php echo $size;?></p>
                     </div>
                 </div>
                 <div class="quantity">
@@ -58,12 +110,12 @@
                         <p>Quantity</p>
                     </div>
                     <div class="content">
-                        <p>Demo Quantity</p>
+                        <p><?php echo $quantity;?></p>
                     </div>
                 </div>
             </div>
             <div id="productBtns">
-                <a href="../checkout">
+                <a href="../checkout/index.php?id=<?php echo $id; ?>">
                     <button>BUY NOW</button>
                 </a>
                 <button><i class="fa-solid fa-cart-shopping"></i> ADD TO CART</button>
@@ -76,7 +128,7 @@
         </div>
         <hr>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, architecto? Velit veritatis assumenda aut nulla. Alias, corrupti aliquid? Iusto dignissimos magni quia suscipit aperiam error corrupti ipsam sapiente tempora ad?</p>
+            <p><?php echo $description;?></p>
         </div>
     </div>
 </div>

@@ -4,7 +4,12 @@
     $db = $database->connect();
 
     $id = $_GET["id"];
+    
     $query = "DELETE FROM `products` WHERE id=$id";
+    $res = $db->prepare($query);
+    $res->execute();
+
+    $query = "DELETE FROM `images` WHERE productID=$id";
     $res = $db->prepare($query);
     $res->execute();
 

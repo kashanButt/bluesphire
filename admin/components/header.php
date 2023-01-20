@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title></title>
+  <title>Bluesphire - Admin</title>
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="http://localhost/projects/bluesphire/admin/assets/css/style-starter.css">
@@ -49,10 +49,12 @@
       <ul class="nav nav-pills nav-stacked custom-nav">
         <li class="active"><a href="http://localhost/projects/bluesphire/admin/dashboard.php"><i class="fa fa-tachometer"></i><span>Home</span></a>
         </li>
-        <li><a href="view-products.php"><i class="fa-sharp fa-solid fa-eye"></i><span>View Products</span></a></li>
-        <li><a href="add-product.php"><i class="fa-solid fa-cart-shopping"></i><span>Add Products</span></a></li>
+        <li><a href="view-products.php"><i class="fa-sharp fa-solid fa-eye"></i> <span>View Products</span></a></li>
+        <li><a href="add-product.php"><i class="fa-solid fa-cart-shopping"></i> <span>Add Products</span></a></li>
         <li><a href="update-products.php"><i class="fa-sharp fa-solid fa-pen-nib"></i> <span>Update Products</span></a></li>
         <li><a href="delete-products.php"><i class="fa-regular fa-trash-can"></i> <span>Delete Products</span></a></li>
+        <li><a href="view-orders.php"><i class="fa-solid fa-box"></i> <span>View Orders</span></a></li>
+        <li><a href="completed-orders.php"><i class="fa-solid fa-flag-checkered"></i> <span>Completed Orders</span></a></li>
       </ul>
       <!-- //sidebar nav end -->
       <!-- toggle button start -->

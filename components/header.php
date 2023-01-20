@@ -278,10 +278,8 @@
                             )";
                     $res = $db->prepare($query);
                     $res->execute();
-                    echo
-                    "<script>
-                        alert('user created');
-                    </script>";
+                    // $query = null;
+                    // $query = "INSERT INTO `users`"
                 }
 
             }

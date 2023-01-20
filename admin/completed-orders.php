@@ -4,7 +4,6 @@
 
   $database = new Database();
   $db = $database->connect();
-
 ?>
 <div class="main-content">
   <!-- content -->
@@ -14,7 +13,7 @@
     <nav aria-label="breadcrumb" class="mb-4">
       <ol class="breadcrumb my-breadcrumb">
         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Products</li>
+        <li class="breadcrumb-item active" aria-current="page">Update Products</li>
       </ol>
     </nav>
     <!-- //breadcrumbs -->
@@ -23,16 +22,15 @@
     <section class="pricing">
       <div class="card card_border mb-5">
         <div class="cards__heading">
-          <h3>Total Products -<span>
+          <h3>Completed Orders -<span>
             <?php
-              $query = "SELECT COUNT(*) FROM `products`";
+              $query = "SELECT COUNT(*) FROM `orders` WHERE action='completed'";
               $res = $db->prepare($query);
               $res->execute();
               $row = $res->fetch(PDO::FETCH_ASSOC);
               echo $row["COUNT(*)"];
-
             ?>
-          </span></h3>
+            </span></h3>
         </div>
         <div class="card-body">
           <!-- pricing version 1 -->
@@ -47,25 +45,16 @@
                     <h5 class="mb-4" style="font-weight:900">S.no</h5>
                   </div>
                   <div class="card-header p-0 card-heading" id="productHeading">
-                    <h5 class="mb-4" style="font-weight:900">Img</h5>
-                  </div>
-                  <div class="card-header p-0 card-heading" id="productHeading">
                     <h5 class="mb-4" style="font-weight:900">Name</h5>
                   </div>
                   <div class="card-header p-0 card-heading" id="productHeading">
-                    <h5 class="mb-4" style="font-weight:900">Company</h5>
+                    <h5 class="mb-4" style="font-weight:900">Orders</h5>
                   </div>
                   <div class="card-header p-0 card-heading" id="productHeading">
-                    <h5 class="mb-4" style="font-weight:900">Color</h5>
+                    <h5 class="mb-4" style="font-weight:900">Address</h5>
                   </div>
                   <div class="card-header p-0 card-heading" id="productHeading">
                     <h5 class="mb-4" style="font-weight:900">SKU</h5>
-                  </div>
-                  <div class="card-header p-0 card-heading" id="productHeading">
-                    <h5 class="mb-4" style="font-weight:900">Category</h5>
-                  </div>
-                  <div class="card-header p-0 card-heading" id="productHeading">
-                    <h5 class="mb-4" style="font-weight:900">Size</h5>
                   </div>
                   <div class="card-header p-0 card-heading" id="productHeading">
                     <h5 class="mb-4" style="font-weight:900">Quantity</h5>
@@ -73,11 +62,14 @@
                   <div class="card-header p-0 card-heading" id="productHeading">
                     <h5 class="mb-4" style="font-weight:900">Price</h5>
                   </div>
+                  <div class="card-header p-0 card-heading" id="productHeading">
+                    <h5 class="mb-4" style="font-weight:900">Progress</h5>
+                  </div>
                 </div>
               </div>
               <div class="col-md-12 px-2" >
                 <?php
-                  $query = "SELECT * FROM `products` ORDER BY id DESC;";
+                  $query = "SELECT * FROM `orders` where action='completed' ORDER BY id DESC";
                   $res = $db->prepare($query);
                   $res->execute();
                   
@@ -85,12 +77,6 @@
                   while($row = $res->fetch(PDO::FETCH_ASSOC)){
                     extract($row);
                     $sno++;
-
-                    $q = "SELECT * FROM `images` WHERE productID = $id LIMIT 1";
-                    $pre = $db->prepare($q);
-                    $pre->execute();
-
-                    $ans = $pre->fetch(PDO::FETCH_ASSOC);
                 ?>
                 <div class="price-card price-card1 p-md-4" style="display:flex;">
                   <div class="card-header p-0 card-heading" id="productContent">
@@ -105,7 +91,7 @@
                     </h5>
                   </div>
                   <div class="card-header p-0 card-heading" id="productContent">
-                    <h5 class="mb-4">
+                    <h5 class="">
                       <img src="./images/<?php echo $ans["imageName"];?>" alt="" style="margin-top:-12px;">
                     </h5>
                   </div>
@@ -148,6 +134,11 @@
                     <h5 class="mb-4">
                       <?php echo $price; ?>
                     </h5>
+                  </div>
+                  <div class="card-header p-0 card-heading" id="productContent">
+                    <div class="d-flex align-items-center flex-wrap justify-content-between" style="position: relative;margin-top: -34px;margin-left: 38px;">
+                      <a href="./update.php?id=<?php echo $id;?>"><button type="submit" class="btn btn-success btn-style mt-4">Update</button></a>
+                    </div>
                   </div>
                 </div>
                 <?php } ?>

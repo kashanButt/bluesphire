@@ -51,6 +51,12 @@
                     <h5 class="mb-4" style="font-weight:900">Name</h5>
                   </div>
                   <div class="card-header p-0 card-heading" id="productHeading">
+                    <h5 class="mb-4" style="font-weight:900">Company</h5>
+                  </div>
+                  <div class="card-header p-0 card-heading" id="productHeading">
+                    <h5 class="mb-4" style="font-weight:900">Color</h5>
+                  </div>
+                  <div class="card-header p-0 card-heading" id="productHeading">
                     <h5 class="mb-4" style="font-weight:900">SKU</h5>
                   </div>
                   <div class="card-header p-0 card-heading" id="productHeading">
@@ -72,7 +78,7 @@
               </div>
               <div class="col-md-12 px-2" >
                 <?php
-                  $query = "SELECT * FROM `products`";
+                  $query = "SELECT * FROM `products` ORDER BY id DESC";
                   $res = $db->prepare($query);
                   $res->execute();
                   
@@ -80,6 +86,12 @@
                   while($row = $res->fetch(PDO::FETCH_ASSOC)){
                     extract($row);
                     $sno++;
+
+                    $q = "SELECT * FROM `images` WHERE productID = $id LIMIT 1";
+                    $pre = $db->prepare($q);
+                    $pre->execute();
+
+                    $ans = $pre->fetch(PDO::FETCH_ASSOC);
                 ?>
                 <div class="price-card price-card1 p-md-4" style="display:flex;">
                   <div class="card-header p-0 card-heading" id="productContent">
@@ -95,12 +107,22 @@
                   </div>
                   <div class="card-header p-0 card-heading" id="productContent">
                     <h5 class="">
-                      <img src="./images/<?php echo $img; ?>" alt="">
+                      <img src="./images/<?php echo $ans["imageName"];?>" alt="" style="margin-top:-12px;">
                     </h5>
                   </div>
                   <div class="card-header p-0 card-heading" id="productContent">
                     <h5 class="mb-4">
                       <?php echo $name; ?>
+                    </h5>
+                  </div>
+                  <div class="card-header p-0 card-heading" id="productContent">
+                    <h5 class="mb-4">
+                      <?php echo $company; ?>
+                    </h5>
+                  </div>
+                  <div class="card-header p-0 card-heading" id="productContent">
+                    <h5 class="mb-4">
+                      <?php echo $color; ?>
                     </h5>
                   </div>
                   <div class="card-header p-0 card-heading" id="productContent">

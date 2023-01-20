@@ -59,6 +59,26 @@
               <div class="col-md-12 px-2" >
                 <div class="p-md-4" style="display:flex;height:75px">
                   <div class="card-header p-0 card-heading" id="addProductContent">
+                  <h5 class="mb-4">Company</h5>
+                  </div>
+                  <div class="card-header p-0 card-heading" id="addProductContent">
+                    <input type="text" class="form-control login_text_field_bg input-style" id="exampleInputName" aria-describedby="emailHelp" placeholder="<?php echo $company; ?>" autofocus name="productCompany">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 px-2" >
+                <div class="p-md-4" style="display:flex;height:75px">
+                  <div class="card-header p-0 card-heading" id="addProductContent">
+                  <h5 class="mb-4">Color</h5>
+                  </div>
+                  <div class="card-header p-0 card-heading" id="addProductContent">
+                    <input type="text" class="form-control login_text_field_bg input-style" id="exampleInputName" aria-describedby="emailHelp" placeholder="<?php echo $color; ?>" autofocus name="productColor">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 px-2" >
+                <div class="p-md-4" style="display:flex;height:75px">
+                  <div class="card-header p-0 card-heading" id="addProductContent">
                   <h5 class="mb-4">SKU</h5>
                   </div>
                   <div class="card-header p-0 card-heading" id="addProductContent">
@@ -133,23 +153,6 @@
 <?php
   include "./components/footer.php";
 
-  $res = $db->lastInsertId();
-  echo $res;
-
-  if (isset($_POST['upload'])) {
- 
-    $filename = $_FILES["images"]["name"];
-    $tempname = $_FILES["images"]["tmp_name"];
-    $folder = "./images/" . $filename;
- 
-    $sql = "INSERT INTO `images`(`productID`, `imageName`) VALUES ('$productID','$filename')";
-    mysqli_query($db, $sql);
-    if (move_uploaded_file($tempname, $folder)) {
-        echo "<h3>  Image uploaded successfully!</h3>";
-    } else {
-        echo "<h3>  Failed to upload image!</h3>";
-    }
-  }
 
   if(isset($_POST["submit"])){
     $name = $_POST['productName'];
@@ -158,8 +161,11 @@
     $size = $_POST['productSize'];
     $quantity = $_POST['productQuantity'];
     $price = $_POST['productPrice'];
+    $price = $_POST['productPrice'];
+    $company = $_POST['productCompany'];
+    $color = $_POST['productColor'];
 
-    $query = "UPDATE `products` SET `name`='$name',`sku`='$sku',`category`='$categories',`size`='$quantity',`quantity`='$quantity',`price`='$price' WHERE 1";
+    $query = "UPDATE `products` SET `name`='$name',`sku`='$sku',`category`='$categories',`size`='$quantity',`quantity`='$quantity',`price`='$price', `company`='$company', `color`='$color' WHERE id=$id ";
     $res = $db->prepare($query);
     $res->execute();
   }

@@ -1,6 +1,10 @@
 <?php 
     include "./database/database.php";
-    include_once "./components/header.php"; ?>
+    include_once "./components/header.php";
+
+    $database = new Database();
+    $db = $database->connect();
+?>
     <div id="content">
         <div id="banner">
             <!-- <div class="bannerCategories">
@@ -66,15 +70,32 @@
         <div id="flashDeals">
             <h2 style="color:#005FE8;">Flash Deals</h2>
             <!-- Owl Caroudel jQuery is located in footer -->
-            <div class="owl-carousel owl-theme"> 
-                <div class="item" style="margin:15px;">
-                    <img src="./img/01.HomeFlashDealsSliderDemoIMG.jpg" alt="">
-                    <div class="productDetails">
-                        <h4>Product Company</h4>
-                        <h2>Product Name</h2>
-                        <h3>Price</h3>
+            <div class="owl-carousel owl-theme">
+                <?php 
+                    $query = "SELECT * FROM `products` ORDER BY id DESC";
+                    $res = $db->prepare($query);
+                    $res->execute();
+                    while($row = $res->fetch(PDO::FETCH_ASSOC)){
+                        extract($row);
+                        $sno++;
+    
+                        $q = "SELECT * FROM `images` WHERE productID = $id LIMIT 1";
+                        $pre = $db->prepare($q);
+                        $pre->execute();
+    
+                        $ans = $pre->fetch(PDO::FETCH_ASSOC);
+                ?>
+                <a href="./product/index.php?id=<?php echo $id; ?>">
+                    <div class="item" style="margin:15px;">
+                        <img src="./admin/images/<?php echo $ans["imageName"]; ?>" alt="" style="width:250px;height:250px;">
+                        <div class="productDetails">
+                            <h4><?php echo $company; ?></h4>
+                            <h2><?php echo $name; ?></h2>
+                            <h3><?php echo $price; ?></h3>
+                        </div>
                     </div>
-                </div>
+                </a>
+                <?php } ?>
             </div>
         </div>
         <div id="featuredBrands">

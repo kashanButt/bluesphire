@@ -28,7 +28,6 @@
 }
 #sidebar input[type="radio"]{
     width: 12px;
-    margin-top: 10px;
     margin-right: 5px;
 }
 #sidebar span{
@@ -42,14 +41,14 @@
     padding: 4% 8%;
     font-size: 15px;
     font-weight: bold;
-    border: 2px solid #17BAC7;
-    background-color: #17BAC7;
+    border: 2px solid #005FE8;
+    background-color: #005FE8;
     color: white;
     border-radius: 1%;
     transition: .2s ease;
 }
 #sidebar input[type="submit"]:hover{
-    border: 2px solid #17BAC7;
+    border: 2px solid #005FE8;
     background-color: inherit;
-    color: #17BAC7;
+    color: #005FE8;
 }

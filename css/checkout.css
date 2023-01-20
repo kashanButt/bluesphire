@@ -69,3 +69,27 @@
     width: 16%;
     float: right;
 }
+#pay{
+    width: 80%;
+    margin: auto;
+    text-align: right;
+    padding: 2%;
+}
+#pay button{
+    height: 40px;
+    padding: .5%;
+    border-radius: 2%;
+    background-color: #005FE8;
+    border: 2px solid #005FE8;
+    font-size: 16px;
+    color: white;
+    margin-right: 50px;
+    transition: all .2s ease;
+}
+#pay button:hover{
+    background-color: inherit;
+    border: 2px solid #005FE8;
+    font-size: 16px;
+    color: #005FE8;
+    
+}

@@ -1,6 +1,9 @@
 <?php 
   class Database {
     private $host = 'localhost';
+    // private $db_name = 'bluetitm_main_data';
+    // private $username = 'bluetitm_admin';
+    // private $password = 'aMK@YBYngK66SB2';
     private $db_name = 'bluesphire';
     private $username = 'root';
     private $password = '';

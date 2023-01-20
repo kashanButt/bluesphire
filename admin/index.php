@@ -26,7 +26,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Collective Admin Panel a Flat Bootstrap Responsive Website Template | Login :: W3Layouts</title>
+  <title>Bluesphire - Admin</title>
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style-liberty.css">
